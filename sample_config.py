@@ -2,11 +2,10 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5008141817:AAF7hrx6DwYAdEVhx2YM4mREcJD7QZE_la4")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 7363654))
-    API_HASH = os.environ.get("API_HASH","68e518c106f816dc7eebded6bfaf33a6h")
-    
+    APP_ID = int(os.environ.get("APP_ID", 12345))
+    API_HASH = os.environ.get("API_HASH")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -28,10 +27,10 @@ class Config(object):
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3600
     # watermark file
-    DEF_WATER_MARK_FILE = "plwdb"
+    DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", "766546130"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "UPLOADERX")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "")
     # database uri (mongodb)
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://swadh1n:swadh1n@cluster0.tjrl9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
